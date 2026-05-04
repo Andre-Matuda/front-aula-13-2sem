@@ -1,0 +1,5 @@
+@import "tailwind.css";
+
+.tableAluno {
+    @apply w-60 mx-auto my-auto bg-amber-200 border-2;
+}
