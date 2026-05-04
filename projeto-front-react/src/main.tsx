@@ -6,6 +6,7 @@ import Users from "./routes/Users/index.tsx";
 import Error from "./routes/Error/index.tsx";
 import Produtos from "./routes/Produtos/index.tsx";
 import { createBrowserRouter,RouterProvider } from "react-router-dom";
+import Alunos from "./routes/Alunos/index.tsx";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/users", element: <Users /> },
       { path: "/produtos", element: <Produtos /> },
+      {path: "/alunos", element: <Alunos/>}
     ],
   },
 ]);

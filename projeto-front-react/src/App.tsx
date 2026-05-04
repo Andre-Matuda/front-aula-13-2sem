@@ -1,21 +1,15 @@
-import { Link, Outlet } from "react-router-dom"
+import { Outlet } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
     <div>
-      <header>
-        <h1>TEMP</h1>
-        <nav>
-          <Link to="/">Home</Link> | <Link to="/users">Users</Link> | <Link to="/produtos">Produtos</Link>
-        </nav>
-      </header>
+      <Header />
 
-        <Outlet/>
+      <Outlet />
 
-      <footer>
-        TEMP
-      </footer>
+      <Footer/>
     </div>
-  )
+  );
 }
-
